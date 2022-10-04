@@ -1,6 +1,8 @@
 # AirlineReservationSystem
 
 Execute git clone https://github.com/shagirhusain98/AirlineReservationSystem.git
+
+
 After that create a new branch git checkout -b <your-branch-name>
 Make changes to the files and execute git add .
 Execute git commit -m "<brief-description-of-your-changes>"
