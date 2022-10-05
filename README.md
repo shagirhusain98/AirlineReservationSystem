@@ -12,7 +12,7 @@ Make changes to the files and execute git add .
 Execute git commit -m "<give-brife_discription>"
 
 
-Then at last execute git push
+Then at last execute git push -u origin <your_branch_name>
   
 Note: Whenever starting a new work always create a new branch from main branch
 
