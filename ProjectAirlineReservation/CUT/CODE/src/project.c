@@ -68,8 +68,7 @@ int main(int argc, char *argv[])
         
     int returnValue;
     //creating threads and using join in main for all the threads
-    int i;
-    for(i=1;i<argc;i++)
+    for(int i=1;i<argc;i++)
     {
         if (returnValue = pthread_create( &thread_id[i], NULL,read_customer_data , (void *)argv[i]))
         {
@@ -84,10 +83,9 @@ int main(int argc, char *argv[])
         temp=temp->next;
     }
     pthread_mutex_destroy(&lock_invalid_cust);
-    int j;
-    for(j=1;i<argc;i++)
+    for(int i=1;i<argc;i++)
     {
-       pthread_join(thread_id[j], NULL); 
+       pthread_join(thread_id[i], NULL); 
     }
 
     flight * temp_f;

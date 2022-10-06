@@ -1,5 +1,5 @@
 cunit_tests: cunit_file.o fileA.o fileA_suite.o fileB.o fileB_suite.o fileC.o fileC_suite.o
-	gcc -o bin/file.tests bin/cunit_file.o bin/fileA.o bin/fileA_suite.o bin/fileB.o bin/fileB_suite.o bin/fileC.o bin/fileC_suite.o -lcunit
+	gcc bin/cunit_file.o bin/fileA.o bin/fileA_suite.o bin/fileB.o bin/fileB_suite.o bin/fileC.o bin/fileC_suite.o -lcunit -o bin/cunit_tests
 
 cunit_file.o: src/cunit_file.c
 	gcc -o bin/cunit_file.o -c src/cunit_file.c 
